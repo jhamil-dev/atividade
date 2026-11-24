@@ -1,0 +1,46 @@
+Boas práticas de Code Review — 4BM | Semana 22
+
+Objetivo: Diferenciar critérios de aprovação de solicitações de alteração durante uma revisão de código (Code Review).
+
+O Code Review é o processo de analisar o código desenvolvido por outra pessoa da equipe antes de integrá-lo à branch
+principal do projeto. Seu objetivo é identificar erros, melhorar a qualidade do código e garantir que ele siga 
+os padrões estabelecidos.
+
+1. Critérios de aprovação (LGTM)
+LGTM significa Looks Good To Me (Parece bom para mim).
+
+É utilizado quando o código foi revisado e atende aos requisitos necessários.
+
+Exemplos:
+- O código funciona corretamente.
+- Não apresenta erros importantes.
+- Segue os padrões de programação.
+- Atende ao objetivo da tarefa.
+- Possui testes adequados.
+
+2. Solicitação de alteração (Change Request)
+É utilizada quando o código apresenta problemas que precisam ser corrigidos antes da aprovação.
+
+Exemplos:
+- Existem erros que impedem o funcionamento.
+- O código não atende aos requisitos.
+- Há falhas de segurança.
+- Faltam testes importantes.
+- A implementação precisa ser corrigida ou melhorada.
+
+3. Diferenças entre LGTM e Change Request
+LGTM	                            Change Request
+Código aprovado.	                Código precisa de alterações.
+Atende aos requisitos.	          Possui problemas pendentes.
+Pode seguir para integração.	    Deve ser corrigido antes da integração.
+
+
+4. Exemplo prático
+Imagine que um desenvolvedor criou uma tela de login:
+- LGTM: O login funciona, valida os dados corretamente e segue os padrões do projeto.
+- Change Request: O sistema permite entrar sem validar a senha. O revisor solicita a correção antes de aprovar.
+
+5. Conclusão
+O Code Review é essencial para manter a qualidade e a segurança de um projeto. O LGTM indica que o código está 
+adequado para aprovação, enquanto o Change Request indica que existem problemas que precisam ser resolvidos 
+antes da integração.
