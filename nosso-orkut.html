@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Khalifa - Início</title>
+    <style>
+        /* Reset e Estilos Gerais estilo Web 2.0 (2004-2010) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: #333;
+        }
+
+        body {
+            background-color: #D4DDED; /* Azul clássico do fundo do Orkut */
+        }
+
+        a {
+            color: #004799;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Barra Superior */
+        header {
+            background: linear-gradient(to bottom, #6D93D1 0%, #567EC2 100%);
+            border-bottom: 1px solid #3B5998;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+        }
+
+        .header-container {
+            width: 100%;
+            max-width: 1020px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Logo Estilo Orkut com o nome Mia Khalifa */
+        .logo {
+            background-color: #FFF;
+            padding: 2px 10px;
+            border-radius: 0 0 8px 8px;
+            margin-top: -4px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: -1px;
+            color: #ED2590; /* Rosa icônico do Orkut */
+        }
+
+        .logo span {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 20px;
+            color: #567EC2;
+        }
+
+        .nav-links a {
+            color: #FFF;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+        }
+
+        .header-right span {
+            color: #D4DDED;
+        }
+
+        .search-box {
+            display: flex;
+            background: #FFF;
+            border-radius: 3px;
+            padding: 1px;
+        }
+
+        .search-box input {
+            border: none;
+            padding: 3px 6px;
+            outline: none;
+            width: 140px;
+        }
+
+        .search-box button {
+            background: #E8EFF9;
+            border: 1px solid #99B3DB;
+            color: #004799;
+            cursor: pointer;
+            padding: 2px 6px;
+            font-weight: bold;
+        }
+
+        /* Layout Principal em 3 Colunas */
+        .main-container {
+            max-width: 1020px;
+            margin: 12px auto;
+            display: grid;
+            grid-template-columns: 165px 1fr 270px;
+            gap: 10px;
+            padding: 0 10px;
+        }
+
+        /* Caixas Padrão (Cards) */
+        .box {
+            background-color: #FFF;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #B8C7E0;
+        }
+
+        /* Coluna Esquerda (Perfil e Menu) */
+        .profile-pic {
+            width: 100%;
+            border: 1px solid #CCC;
+            padding: 2px;
+            background: #FFF;
+            margin-bottom: 8px;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background-color: #E8EFF9;
+        }
+
+        .user-name {
+            font-weight: bold;
+            color: #004799;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+
+        .user-details {
+            color: #666;
+            font-size: 10px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .side-menu {
+            list-style: none;
+            border-top: 1px solid #E8EFF9;
+        }
+
+        .side-menu li {
+            border-bottom: 1px solid #E8EFF9;
+        }
+
+        .side-menu a {
+            display: block;
+            padding: 5px 4px;
+            color: #004799;
+        }
+
+        .side-menu a:hover {
+            background-color: #E8EFF9;
+            text-decoration: none;
+        }
+
+        /* Coluna Central */
+        .welcome-title {
+            font-size: 16px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Status / "O que você está fazendo" */
+        .status-box {
+            background-color: #E8EFF9;
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 6px;
+        }
+
+        .status-box input {
+            flex: 1;
+            padding: 4px 6px;
+            border: 1px solid #99B3DB;
+            border-radius: 3px;
+        }
+
+        .btn-orkut {
+            background: linear-gradient(to bottom, #FFFFFF 0%, #E1E9F6 100%);
+            border: 1px solid #99B3DB;
+            border-radius: 3px;
+            padding: 3px 10px;
+            color: #004799;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-orkut:hover {
+            background: #D4DDED;
+        }
+
+        /* Barra de Estatísticas (Recados, Fotos, Fãs, Confiável, Legal, Sexy) */
+        .stats-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 8px 0;
+            border-top: 1px solid #E8EFF9;
+            border-bottom: 1px solid #E8EFF9;
+            margin-bottom: 12px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 10px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #004799;
+            font-size: 11px;
+            margin-top: 2px;
+        }
+
+        .icons-rating {
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+
+        /* Sorte de Hoje */
+        .luck-box {
+            background-color: #FFF8DC;
+            border: 1px solid #E6DB55;
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+        }
+
+        /* Mural de Recados (Scraps) */
+        .section-header {
+            font-weight: bold;
+            color: #333;
+            background-color: #E8EFF9;
+            padding: 5px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .scrap-item {
+            display: flex;
+            gap: 10px;
+            padding: 8px 0;
+            border-bottom: 1px solid #E8EFF9;
+        }
+
+        .scrap-item:last-child {
+            border-bottom: none;
+        }
+
+        .scrap-avatar {
+            width: 45px;
+            height: 45px;
+            background-color: #D4DDED;
+            border: 1px solid #99B3DB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #567EC2;
+            flex-shrink: 0;
+        }
+
+        .scrap-content {
+            flex: 1;
+        }
+
+        .scrap-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+        }
+
+        .scrap-date {
+            color: #888;
+            font-size: 10px;
+        }
+
+        /* Coluna Direita (Amigos e Comunidades) */
+        .grid-thumbs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .thumb-card {
+            background-color: #F4F7FC;
+            border: 1px solid #E8EFF9;
+            padding: 4px;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+        .thumb-img {
+            width: 100%;
+            height: 55px;
+            background-color: #D4DDED;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #567EC2;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .thumb-name {
+            font-size: 10px;
+            color: #004799;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .box-footer {
+            text-align: right;
+            border-top: 1px solid #E8EFF9;
+            padding-top: 5px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #BCCCE8;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: #444;
+            font-size: 10px;
+        }
+
+        footer a {
+            margin: 0 6px;
+        }
+
+        /* Responsividade básica para telas menores */
+        @media (max-width: 800px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo">Mia <span>khalifa</span></div>
+                <nav class="nav-links">
+                    <a href="#">Início</a>
+                    <a href="#">Página de recados</a>
+                    <a href="#">Amigos</a>
+                    <a href="#">Comunidades</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <span>mia.khalifa@miakhalifa.com</span>
+                <a href="#" style="color:#FFF;">Sair</a>
+                <div class="search-box">
