@@ -1,0 +1,9 @@
+
+
+Tema: Trunk-Based Development e Feature Flags
+
+O Trunk-Based Development é uma metodologia em que os desenvolvedores integram pequenas alterações de código frequentemente na branch principal do projeto. Para evitar que funcionalidades incompletas apareçam para os usuários, são utilizadas Feature Flags, que funcionam como interruptores para ativar ou desativar recursos.
+
+Assim, é possível continuar desenvolvendo e testando novas funcionalidades sem afetar a experiência dos usuários. Isso facilita a integração contínua, reduz conflitos e torna o desenvolvimento mais rápido e organizado.
+
+Exemplo: um aplicativo pode receber uma nova tela ainda em desenvolvimento, mas ela permanece desativada até estar pronta para ser utilizada.
