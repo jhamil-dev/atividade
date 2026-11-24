@@ -1,9 +1,33 @@
+TRUNK-BASED DEVELOPMENT E FEATURE FLAGS
 
+1. O QUE SÃO TRUNK-BASED DEVELOPMENT E FEATURE FLAGS?
 
-Tema: Trunk-Based Development e Feature Flags
+Trunk-Based Development é uma metodologia em que os desenvolvedores integram pequenas alterações frequentemente na branch principal. Feature Flags são recursos que permitem ativar ou desativar funcionalidades sem precisar alterar o código.
 
-O Trunk-Based Development é uma metodologia em que os desenvolvedores integram pequenas alterações de código frequentemente na branch principal do projeto. Para evitar que funcionalidades incompletas apareçam para os usuários, são utilizadas Feature Flags, que funcionam como interruptores para ativar ou desativar recursos.
+2. COMO FUNCIONAM?
 
-Assim, é possível continuar desenvolvendo e testando novas funcionalidades sem afetar a experiência dos usuários. Isso facilita a integração contínua, reduz conflitos e torna o desenvolvimento mais rápido e organizado.
+Os desenvolvedores enviam pequenas alterações para a branch principal. As funcionalidades que ainda estão em desenvolvimento ficam desativadas por meio de Feature Flags.
 
-Exemplo: um aplicativo pode receber uma nova tela ainda em desenvolvimento, mas ela permanece desativada até estar pronta para ser utilizada.
+Exemplo de pseudocódigo:
+
+SE feature_ativa == verdadeiro:
+    mostrar_nova_funcionalidade()
+SENÃO:
+    manter_tela_atual()
+
+3. VANTAGENS DO USO DE FEATURE FLAGS
+
+- Permite integrar códigos incompletos sem expor funcionalidades aos usuários.
+- Facilita os testes e a integração contínua.
+- Reduz conflitos entre desenvolvedores.
+- Permite ativar novas funcionalidades quando estiverem prontas.
+
+4. APLICAÇÃO NO NOSSO REPOSITÓRIO
+
+No repositório da equipe, podemos utilizar Feature Flags para desenvolver novas funcionalidades sem disponibilizá-las imediatamente aos usuários.
+
+Por exemplo, um integrante pode desenvolver uma nova tela enquanto outro trabalha em outra parte do aplicativo. A nova funcionalidade permanece desativada até ser concluída e testada.
+
+5. CONCLUSÃO
+
+Trunk-Based Development e Feature Flags ajudam a organizar o desenvolvimento em equipe, facilitar a integração contínua e evitar que funcionalidades incompletas sejam exibidas aos usuários.
