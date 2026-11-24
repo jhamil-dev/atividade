@@ -1,0 +1,27 @@
+ GIT BRANCHES
+
+1. O QUE SÃO GIT BRANCHES?
+Git Branches são ramificações utilizadas para permitir que diferentes desenvolvedores trabalhem em partes de um projeto sem modificar diretamente o código principal.
+
+2. COMO FUNCIONAM?
+Cada branch representa uma linha independente de desenvolvimento. A branch principal geralmente é chamada de main.
+Exemplos de comandos:
+
+git branch desenvolvimento
+git switch desenvolvimento
+git add .
+git commit -m "Adiciona nova funcionalidade"
+
+3. LIMITAÇÕES DO USO DE BRANCHES
+- Conflitos quando diferentes pessoas modificam os mesmos arquivos.
+- Dificuldade de integração quando as branches ficam muito tempo separadas.
+- Possibilidade de utilizar códigos desatualizados.
+- Dificuldade de organização em equipes grandes.
+
+4. APLICAÇÃO NO NOSSO REPOSITÓRIO
+No repositório da equipe, podemos utilizar branches para separar o desenvolvimento de cada atividade.
+Um integrante pode trabalhar na documentação do Git Flow, enquanto outro trabalha na documentação de Code Review.
+Depois de concluir as alterações, os arquivos podem ser integrados à branch principal.
+
+5. CONCLUSÃO
+Git Branches é importante para organizar o desenvolvimento em equipe, facilitar a colaboração e reduzir alterações indevidas no código principal.
