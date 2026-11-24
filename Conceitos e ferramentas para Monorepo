@@ -1,0 +1,28 @@
+Conceitos e ferramentas para Monorepo — 4BM | Semana 23
+
+1. O que é Monorepo?
+Monorepo é uma estratégia de organização em que vários projetos ou aplicações são armazenados em um único 
+repositório Git. Isso facilita o compartilhamento de códigos, bibliotecas e configurações entre equipes.
+
+2. Principais vantagens
+- Organização: centraliza vários projetos em um único lugar.
+- Compartilhamento: permite reutilizar códigos e bibliotecas.
+- Padronização: facilita manter as mesmas regras de desenvolvimento.
+- Integração: simplifica alterações que envolvem diferentes projetos.
+
+3. Principais desafios
+- Governança: exige regras claras de acesso, organização e revisão de código.
+- Escalabilidade: repositórios muito grandes podem dificultar o gerenciamento.
+- Builds: compilar todos os projetos a cada alteração pode consumir muito tempo.
+- Integração contínua: exige ferramentas capazes de identificar quais projetos foram modificados para executar apenas os testes necessários.
+
+4. Ferramentas utilizadas
+- Nx: gerencia projetos, dependências e processos de build.
+- Turborepo: otimiza tarefas e utiliza cache para acelerar builds.
+- Lerna: auxilia no gerenciamento de múltiplos pacotes JavaScript.
+- Git: controla versões e alterações dos projetos.
+
+5. Conclusão
+A arquitetura Monorepo facilita o compartilhamento de códigos, a padronização e a integração entre 
+diferentes projetos. Porém, exige organização e ferramentas adequadas para evitar problemas de desempenho 
+e gerenciamento. Quando bem estruturada, pode melhorar a produtividade das equipes e tornar o desenvolvimento mais eficiente.
