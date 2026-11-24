@@ -1,0 +1,35 @@
+1. Como as Branches Previnem Conflitos
+
+
+Quando vários desenvolvedores trabalham diretamente na mesma linha do tempo (main), qualquer alteração simultânea no mesmo arquivo gera atritos constantes. O uso de branches cria ambientes isolados que resolvem isso de três formas principais:
+• Isolamento de Contexto: Cada nova funcionalidade (feature/*) ou correção (hotfix/*) nasce em sua própria ramificação. Um desenvolvedor pode alterar dezenas de arquivos sem quebrar ou interferir no código que outro colega está escrevendo no mesmo momento.
+• Integração Controlada: Em vez de mesclar código inacabado a todo instante, a união (merge) acontece apenas quando a tarefa está concluída, testada e revisada.
+• Proteção do Código de Produção: As branches principais (main e develop) permanecem limpas e estáveis, recebendo apenas códigos validados, o que evita que conflitos de integração paralisem entregas urgentes.
+
+
+
+
+2. Impacto nos Fluxos Paralelos (Estrutura Git Flow)
+
+
+No Git Flow, a divisão clara de responsabilidades entre as branches organiza o trabalho paralelo da equipe:
+
+Tipo de Branch	Função no Fluxo Paralelo	Impacto na Prevenção de Conflitos
+feature/*	Desenvolvimento de novas funcionalidades de forma independente.	Evita que equipes de diferentes módulos interfiram no código umas das outras durante a criação.
+develop	Linha de integração onde todas as features concluídas se encontram.	Centraliza a resolução de eventuais conflitos em um ambiente de testes, longe da produção.
+release/*	Preparação para uma nova versão (ajustes finais e testes de QA).	Permite que a equipe continue criando novas features na develop enquanto outra parte estabiliza a entrega atual.
+hotfix/*	Correção rápida de falhas críticas em produção.	Isola a emergência sem precisar pausar ou desfazer o trabalho em andamento nas branches de desenvolvimento.
+main	Código oficial em produção.	Nunca recebe commits diretos, eliminando conflitos inesperados no ambiente do usuário final.
+
+
+
+
+
+3. Limitações e Boas Práticas
+
+
+Embora o uso de branches reduza a frequência dos conflitos, ele não os elimina totalmente. Se duas branches de feature alterarem exatamente as mesmas linhas do mesmo arquivo, o conflito ocorrerá no momento do merge para a develop.
+Para evitar que esses conflitos se tornem grandes e difíceis de resolver (merge hell), algumas práticas são essenciais:
+1. Branches de vida curta: Evitar manter uma feature branch aberta por semanas. Quanto menor o escopo e o tempo de vida, menor a chance de divergência.
+2. Atualização constante: Fazer o pull ou rebase frequente da develop para dentro da sua feature branch resolve pequenos conflitos aos poucos, antes da entrega final.
+3. Pull Requests (PRs) e Code Review: Usar revisões de código antes de aprovar o merge garante que outra pessoa valide a integração.
