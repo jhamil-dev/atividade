@@ -1,2 +1,2 @@
 # atividade
-integrantes: ruan, jhamil, jhonathan, fernando, joão
+integrantes: ruan, jhamil, jhonathan, fernando
