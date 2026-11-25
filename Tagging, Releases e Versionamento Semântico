@@ -1,8 +1,5 @@
 Tagging, Releases e Versionamento Semântico — 3BM | Semana 18
 
-Objetivo: Avaliar a importância de sincronizar as tags locais com o repositório remoto para garantir a 
-estabilidade do processo de deploy da equipe.
-
 1. O que é Tagging?
 Tagging é o processo de criar identificações específicas para marcar versões importantes de um projeto no Git. 
 Essas tags ajudam a localizar versões estáveis do código e facilitam o controle das atualizações.
