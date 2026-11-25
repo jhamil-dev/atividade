@@ -1,0 +1,34 @@
+Code Review e Padrões de Qualidade de Código — 3BM | Semana 17
+
+1. O que é Code Review?
+Code Review é o processo de revisar o código desenvolvido por outro integrante da equipe antes de integrá-lo ao projeto. 
+Essa prática ajuda a identificar erros, melhorar a organização e garantir que o código esteja funcionando corretamente.
+
+2. Importância do Code Review
+- Identificação de erros: ajuda a encontrar problemas antes que cheguem ao sistema final.
+- Qualidade: incentiva a criação de códigos mais organizados e eficientes.
+- Segurança: permite identificar possíveis falhas de segurança.
+- Aprendizado: possibilita a troca de conhecimentos entre os desenvolvedores.
+- Padronização: mantém o código seguindo as mesmas regras da equipe.
+
+3. O que são checklists de padrões?
+São listas de verificações utilizadas durante a revisão para garantir que o código siga os critérios de qualidade 
+definidos pela equipe.
+
+Exemplos de verificações:
+- O código está organizado e legível?
+- Os nomes das variáveis são claros?
+- Existem comentários quando necessários?
+- Foram realizados testes?
+- Não existem erros ou informações desnecessárias?
+- O código segue os padrões definidos pelo projeto?
+
+4. Relação entre Code Review e qualidade
+O Code Review, junto aos checklists, ajuda a manter um padrão de desenvolvimento entre os integrantes da equipe. 
+Enquanto a revisão permite analisar o funcionamento e a estrutura do código, os checklists garantem que os critérios 
+importantes sejam verificados antes da aprovação.
+
+5. Conclusão
+O Code Review e os checklists são práticas importantes para garantir a qualidade do software. Eles ajudam a identificar 
+problemas antecipadamente, manter a organização e incentivar a colaboração entre desenvolvedores. Quando utilizados 
+corretamente, tornam o desenvolvimento mais seguro, padronizado e eficiente.
