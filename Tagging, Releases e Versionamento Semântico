@@ -1,0 +1,40 @@
+Tagging, Releases e Versionamento Semântico — 3BM | Semana 18
+
+Objetivo: Avaliar a importância de sincronizar as tags locais com o repositório remoto para garantir a 
+estabilidade do processo de deploy da equipe.
+
+1. O que é Tagging?
+Tagging é o processo de criar identificações específicas para marcar versões importantes de um projeto no Git. 
+Essas tags ajudam a localizar versões estáveis do código e facilitam o controle das atualizações.
+
+
+2. O que são Releases?
+Releases são versões oficiais de um software disponibilizadas para uso ou implantação. Geralmente, são associadas 
+a uma tag no Git e podem incluir informações sobre novas funcionalidades, correções e melhorias.
+
+3. O que é Versionamento Semântico?
+É um padrão utilizado para organizar as versões de um software no formato:
+
+MAJOR.MINOR.PATCH
+- MAJOR: indica mudanças importantes que podem quebrar a compatibilidade.
+- MINOR: indica a adição de novas funcionalidades.
+- PATCH: indica correções de erros sem alterar as funcionalidades existentes.
+Exemplo: v2.3.1.
+
+4. Importância de sincronizar as tags
+Sincronizar as tags locais com o repositório remoto é importante para garantir que todos os integrantes 
+da equipe trabalhem com as mesmas referências de versões.
+
+Isso evita problemas como:
+- Deploy de versões incorretas.
+- Diferenças entre o código local e o remoto.
+- Confusão na identificação das versões.
+- Dificuldade para recuperar versões anteriores.
+
+No Git, o comando git push --tags envia as tags locais para o repositório remoto, permitindo que outros integrantes 
+tenham acesso a elas.
+
+5. Conclusão
+A sincronização das tags é fundamental para manter a organização e a estabilidade do fluxo de deploy. Com o uso correto 
+do tagging, releases e versionamento semântico, a equipe consegue identificar versões, acompanhar alterações e evitar 
+erros durante a publicação de novas atualizações.
